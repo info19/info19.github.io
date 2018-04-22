@@ -1,1 +1,0 @@
-<p><small><?php echo $useful_votes ?>/<?php echo $total_votes ?> <?php echo lang("ctn_78") ?></small></p>
