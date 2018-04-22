@@ -1,0 +1,8 @@
+.top-bar { background: #1e1d1b; height: 50px; border-bottom: 1px solid #161413;}
+.nav-bar { background: #3c3a35; height: 30px; border-top: 1px solid #46433d;}
+.bread-bar { background: #d9d9d9; height: 40px; border-bottom: 1px solid #c3c3c3;}
+.top-nav { list-style: none; margin-left: 0px; padding-left: 0px;}
+.top-nav li > a{ float: left; margin-right: 40px; color: #c0b9a8; text-transform: uppercase; font-weight: 600;}
+.top-nav li a:hover { color: #FFF; text-decoration: none; }
+
+footer { background: #3c3a35; margin-top: 30px; }

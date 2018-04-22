@@ -1,1 +1,0 @@
-<div class="audio_all_box fl_l" onClick="wysiwyg.boxAudio('{photo}', '{user-id}', '{audio-id}')"><img src="{photo}" alt="" />{title}</div>

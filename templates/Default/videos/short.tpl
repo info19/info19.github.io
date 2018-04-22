@@ -1,3 +1,0 @@
-<div class="fl_l video_bl" id="video_{id}" > <div class="video_controls icon-cancel-3" onClick="videos.delet({id}); return false"></div><div class="video_controls icon-pencil-7" onClick="videos.editbox({id}); return false"></div> <div class="drak_bl"></div> <div onClick="videos.show({id}, this.href); return false" class="play_big_but icon-play-4"></div> <div class="video_bl_img"><img src="{photo}" class="" style="opacity: 1;"></div> <div class="video_title" href="/video{user-id}_{id}" id="video_title_{id}" onClick="videos.show({id}, this.href); return false">{title}</div> </div> 
-<input type="hidden" value="{id}" id="onevideo" />
-

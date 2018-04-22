@@ -1,9 +1,0 @@
-<FilesMatch ".*">
-   Order allow,deny
-   Deny from all
-</FilesMatch>
-
-<FilesMatch "\.(doc|docx|xls|xlsx|ppt|pptx|rtf|pdf|png|jpg|gif|psd|mp3|djvu|fb2|ps|jpeg|txt)$|^$">
-   Order deny,allow
-   Allow from all
-</FilesMatch>

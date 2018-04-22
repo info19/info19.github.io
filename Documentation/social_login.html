@@ -1,0 +1,170 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>UZY - Secure User Management System Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+		img { border: 1px solid #858585;}
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;UZY - Secure User Management System&rdquo; Social Login Guide by &ldquo;Patchesoft&rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;UZY - Secure User Management System&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 06/03/2014<br>
+					By: Patchesoft<br>
+					Email: <a href="mailto:patchesoft@gmail.com">patchesoft@gmail.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Hello! This document is used to help those wanting to setup the Social Login Features of the UZY Management System. For help on installing and modifying the UZY System, please read the doucmentation file that came with it: <a href="index.html">here</a></p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#intro">Introduction</a></li>
+			<li><a href="#twitter">Twitter</a></li>
+			<li><a href="#facebook">Facebook</a></li>
+			<li><a href="#google">Google</a></li>
+			<li><a href="#conclusion">Conclusion</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="intro"><strong>Introduction</strong> - <a href="#toc">top</a></h3>
+		
+		<p>The UZY System allows for users to login to the system via Twitter, Facebook and Google. This guide aims to help you activate this feature. You can disable Social Logins via the Admin Panel. In order for the social login to work, you need to add the correct Social Network keys to your admin area. This guide will show you where you can obtain these keys and where they need to go. Users that login via Social Networks just have to click the Login With Twitter/Facebook/Google buttons and the UZY System will connect to the social network to obtain their user information and log them into the system. All the user has to do is click and it allows them to use the Uzy System without having to enter lots of information on the register page.</p>
+
+		<hr>
+
+		<h3 id="twitter"><strong>Twitter</strong> - <a href="#toc">top</a></h3>
+
+		<p>In order to implement the Twitter Social Login, you will need to get the following information:</p>
+
+		<ul>
+			<li>Twitter Consumer Key</li>
+			<li>Twitter Consumer Secret</li>
+			<li>Twitter Access Token</li>
+			<li>Twitter Access Secret</li>
+		</ul>
+
+		<p>To get this information, you need to create your own App at the Twitter Developer's website: <a href="https://dev.twitter.com/">https://dev.twitter.com/</a>. It's free to do and easy to setup.</p>
+
+		<p>First you will want to head to the Twitter Developer site and login using your Twitter Account. Once your logged in, head over to <a href="https://apps.twitter.com/">https://apps.twitter.com/</a>. Click the Create New App button in the right corner.</p>
+
+		<img src="assets/images/soc_1.png">
+
+		<p>Next you want to fill out your App Information. In the Callback URL field, you want to enter your website URL followed by /login/twitter_login_pro; so if your website URL was http://www.patchesoft.com, the URL you would enter would be http://www.patchesoft.com/login/twitter_login_pro </p>
+
+		<img src="assets/images/soc_2.png">
+
+		<p>Once created, click on the API tab.</p>
+
+		<img src="assets/images/soc_3.png">
+
+		<p>On the API Tab, scroll to the bottom to find the Create My Access Token button. Click it. Your tokens will then be generated; it may take a few minutes for them to appear on the page. Just refresh every couple of minutes until you come to a page like the one below.</p>
+
+		<img src="assets/images/soc_4.png">
+		<img src="assets/images/soc_5.png">
+
+		<p>Now you need to enter the keys from your app into the Admin Panel of your UZY System. You can find the Twitter Settings under the Social Media Link.</p>
+
+		<hr>
+
+		<h3 id="facebook"><strong>Facebook</strong> - <a href="#toc">top</a></h3>
+
+		<p>In order to implement the Facebook Social Login, you will need to get the following information:</p>
+
+		<ul>
+			<li>Facebook APP ID</li>
+			<li>Facebook APP Secret</li>
+		</ul>
+
+		<p>To get this information, you need to create your own Facebook App at the Facebook Developer's website: https://developers.facebook.com/</p>
+
+		<img src="assets/images/soc_6.png" />
+
+		<p>Click on the APPs tab and select Create a new app</p>
+
+		<img src="assets/images/soc_7.png" />
+
+		<p>Give your App a name. You can ignore the namespace field. Select a category and then hit the Create button.</p>
+
+		<img src="assets/images/soc_8.png" />
+
+		<p>On the above page you will be able to get your Facebook APP ID and Facebook APP Secret. Then you need to add them to the UZY System in the Admin Panel. You can find the Facebook Keys under the Social Media Tab.</p>
+
+		<img src="assets/images/soc_13.png" /> 
+
+		<p>The final step is to click on the Settings tab on the Facebook Developers page and then click the Advanced Top Tab. Scroll to the bottom and find the Valid OAuth redirect URIs and add in your websites URL as shown above.</p>
+
+		<hr>
+
+		<h3 id="google"><strong>Google</strong> - <a href="#toc">top</a></h3>
+
+		<p>In order to implement the Google Social Login, you will need to get the following information:</p>
+
+		<ul>
+			<li>Google Client ID</li>
+			<li>Google Client Secret</li>
+		</ul>
+
+		<p>To get this information, you need to create your own Google App at the Google Developer's website: https://console.developers.google.com</p>
+
+		<img src="assets/images/soc_9.png" />
+
+		<p>Click Create A Project. Give your project a name and Accept the Terms Of Use.</p>
+
+		<img src="assets/images/soc_10.png" />
+
+		<p>Next click on the API & Auths tab and then the Credentials Tab. Click on the Create New Client ID button and fill in your information. For the  Authorized redirect URI enter your domain name followed by /login/google_login so for example: http://www.example.com/login/google_login. For the  Authorized JavaScript origins just enter your website's URL.</p>
+
+		<img src="assets/images/soc_15.png" />
+
+		<p>Once created you will find your Client ID and Client Secret values.</p>
+
+		<img src="assets/images/soc_16.png" />
+
+		<p>The final step is to make sure the Google+ API setting is set to ON. Check out the scrrenshot below.</p>
+
+		<img src="assets/images/soc_14.png" />
+
+		<p>Now you have both keys and can add them to the UZY System. Go to the Admin Panel and locate the Social Media Link to find the place where to insert the keys.</p>
+
+		<hr>
+
+		<h3 id="conclusion"><strong>Conclusion</strong> - <a href="#toc">top</a></h3>
+
+		<p>Hopefully the Social Network sites don't update their User Interface for their Developer Websites in the next few months otherwise the screenshots may be a little out of date. Once you have all the keys, logging into Social Network should work. Make sure it is enabled in the Admin Panel under Global Settings. Don't use the keys in the screenshot because they won't work.</p>
+
+
+
+		<p class="append-bottom alt large"><strong>Patchesoft</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
