@@ -1,0 +1,65 @@
+#al_albums_css{display: none;}
+.album_block{width: 217px;height: 168px;display: block;margin: 5px;cursor: pointer;float:left;transition: all -0.8s;}
+.album_item{width: 219px;height: 168px;display:block;z-index: 125px;overflow: hidden;}
+.album_item img{width: 243px;min-height: 168px;transition: opacity 500ms ease;opacity: 0;}
+.drag_album{position: absolute; z-index: 150;}
+.album_container{width: 759px;margin-left: -9px;margin-top: -6px;position: relative}
+.album_loadmore{width: 770px;padding: 13px 0;width: 770px;}
+.album_loadmore.full{margin-left: -15px;width: 770px;}
+.lastphototitle{margin-top: 20px;}
+.album_photo_res{}
+.album_photo{float:left;width: 130px;height: 87px;padding: 9px 8px 9px 9px;cursor: pointer}
+.album_photo .photo{background: #F1F1F1;text-align: center;width: 130px;height: 87px;overflow: hidden;}
+.album_photo img{width: 100%;max-width: 130px;min-height: 87px;transition: opacity 500ms ease;opacity: 0;}
+.all_photos_lnk{position: absolute;white-space: nowrap;right: 12px;top:0;font-weight: normal}
+.album_links{position: relative;margin-top: 23px;}
+.loadphotobut{margin-left:-15px;width: 760px;background: #EAEFF5}
+.loadphotobut:hover{background: #d9e0e8}
+.upload_photo_item{padding: 10px 15px;border-top: 1px solid #DAE1E8;height: 90px;width: 740px;display:block;z-index: 125px;cursor: move}
+#photo_res .upload_photo_item:first-child{border:0px;}
+.upload_photo_item .photo{width:130px;height:87px;text-align: center}
+.upload_photo_item img{max-width: 130px;max-height: 87px;}
+.upload_photo_item .preloader{position: absolute;width: 100%;text-align: center;top:50%;margin-top:-5px;}
+.photo_upload_bar{height: 34px;background: #F1F1F1;border: 1px solid #DAE1E8;margin-left: -15px;width: 770px;border-width: 1px 0 1px 0;position: relative;display: none}
+.photo_upload_bar .progress_line{position: absolute;top:0;left:0;height:100%;width: 0%;background: rgb(68, 98, 128);z-index: 1}
+.photo_upload_bar .upload_rercent{font-size:13px;color:#BDB1B1;position: absolute;width:100%;text-align: center;top:9px;z-index: 2}
+.upload_photo_item .descrition{float:left;margin-left: 10px}
+.upload_photo_item .descrition textarea{border: 1px solid #C3CBD4;width:581px;height: 44px;margin-bottom: 10px}
+.upload_photo_item:hover{background: #F5F6F8}
+.upload_photo_item #saved{color: rgb(102, 102, 102);opacity: 0;margin-top: 6px;margin-left: 10px;}
+.upload_photo_item_parent{height:110px;margin-left: -15px;cursor: pointer;}
+.photo_container{position: relative}
+.upload_footer{padding: 15px 0;margin-left: -15px;width: 770px;text-align: center;background: #F7F7F7;border-top: 1px solid #DAE1E8;display: none}
+.album_head_lnk{position: absolute;white-space: nowrap;right:10px;top:22px;}
+.edit_album_cont{padding: 15px 30px;margin-left:-15px;width:710px;background: #F7F7F7;border-bottom: 1px solid #DAE1E8;}
+.edit_album_cont .cover{margin-top:20px;}
+.edit_album_cont .cover img{width: 130px;}
+.edit_album_cont .descr_bl{margin-left:20px;line-height: 160%}
+.edit_album_cont .descr_bl .title{font-weight: bold;color: rgb(57, 78, 99);font-size: 12px;margin-bottom: 3px}
+.edit_album_cont input, .edit_album_cont textarea{border:1px solid #C3CBD4;width: 255px;padding: 6px;margin-bottom: 10px;}
+.edit_album_cont textarea{height: 62px;}
+.edit_album_cont #saved {color: #666;opacity: 0;float:left;margin-top: 13px;margin-left:10px;transition: opacity 500ms;}
+.edit_album_cont .menu{list-style: none;margin-top: 10px}
+.edit_album_cont .menu li {padding: 6px 10px;color: #2B587A;cursor: pointer}
+.edit_album_cont .menu li:hover{background: #E1E7ED}
+.album_settings{position: absolute;width: 243px;height: 168px;z-index: 3;top:0;left: -35px;}
+.album_settings .edit{position: absolute;right: -100%;top:40px;color: rgba(255,255,255,0.7);font-size: 21px;z-index: 3;transition: right 600ms, color 300ms;}
+.album_settings .del{position: absolute;right: -100%;top:7px;color: rgba(255,255,255,0.7);font-size: 25px;z-index: 3;transition: right 400ms, color 300ms;}
+.album_settings .edit:hover, .album_settings .del:hover{color: #fff;}
+.album_item:hover .edit, .album_item:hover .del{right:6px;}
+.album_item .dark_bg{position: absolute;z-index: 2;top:0px;left:0;width:243px;height:168px;background: rgba(0,0,0,0.5);opacity: 0;transition: opacity 300ms;}
+.album_item:hover .dark_bg{opacity: 1}
+.album_item .description {position: absolute;z-index: 4;width: 243px;font-weight:bold;color: #fff;font-size: 12px;left:0px;bottom: -202px;background: rgba(0,0,0,0.7);padding: 10px;box-sizing: border-box;-moz-box-sizing: border-box;transition: bottom 300ms ease;}
+.album_item:hover .description{bottom:-168px;}
+.upload_photo_item .title{font-weight: bold;color: rgb(57, 78, 99);font-size: 12px;margin-bottom: 3px}
+.upload_footer.fix{position: fixed;z-index:1000;bottom: 0px;border-bottom: 1px solid #C9D3DD;}
+
+/* menu */
+.menuNews {list-style: none;border-bottom: 1px solid #DBE2EA;width: 800px;margin-left: -15px;}
+.menuNews.white{background: #fff;margin: 0;padding-top: 14px;width: 100%;border-radius: 0 0 2px 2px;border-bottom: 0;}
+.menuNews li {float: left;padding: 9px 10px 16px; margin-left: 5px;color: rgb(68, 98, 128);cursor:pointer;white-space: nowrap;font-size: 14px;opacity: 0.7;border-bottom: 3px solid transparent;}
+.menuNews li:first-child{margin-left: 15px;}
+.menuNews li:hover{opacity: 1;}  
+.menuNews li span{font-weight: bold;}
+.menuNews .activClass {border-bottom: 3px solid #527FAF;opacity: 1;}
+.menuNews li.short{white-space: nowrap;overflow: hidden;text-overflow:ellipsis;max-width: 200px;}

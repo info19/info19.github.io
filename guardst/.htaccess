@@ -1,0 +1,17 @@
+# Protect the htaccess file
+<Files .htaccess>
+Order Allow,Deny
+Deny from all
+</Files>
+
+# Protect the config file
+<Files config.php>
+Order Allow,Deny
+Deny from all
+</Files>
+
+# Protect the security file
+<Files security.php>
+Order Allow,Deny
+Deny from all
+</Files>
